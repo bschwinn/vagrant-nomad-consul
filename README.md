@@ -4,7 +4,11 @@
 
 1) install virtual box: brew cask install virtualbox
 1) install vagrant: brew cask install vagrant
-1) launch all the things: vagrant up
+1) launch all the things: 
+
+```
+vagrant up
+```
 
 
 ### Setting up the cluster
@@ -26,5 +30,9 @@ the leader.
 
 
 ### Starting prometheus
-1) prom > prometheus -config.file=prometheus.yml
+SSH into the prometheus node and start prometheus.
 
+```
+vagrant ssh prom
+prometheus -config.file=prometheus.yml
+```
